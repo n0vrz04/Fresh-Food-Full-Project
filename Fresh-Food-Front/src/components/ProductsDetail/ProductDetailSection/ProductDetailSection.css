@@ -1,0 +1,84 @@
+.product-name-detail {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .product-pricing {
+    margin-bottom: 20px;
+  }
+  
+  .old-price-detail {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 1.2rem;
+  }
+  
+  .new-price-detail {
+    color: #8bc34a;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .product-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .product-actions button {
+    font-size: 1.2rem;
+    color: #8bc34a;
+    background-color: white;
+    border: 1px solid #8bc34a;
+  }
+
+  .product-actions button:hover {
+    color: white;
+    background-color: #8bc34a;
+    border: none;
+  }
+
+  .product-actions button:active {
+    background-color: #8bc34a !important; 
+    border: none !important;
+  }
+
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: 18px;
+  }
+  
+  .quantity-value {
+    width: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .decrement-btn,.increment-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #8bc34a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .decrement-btn,.increment-btn:hover {
+    background-color: #6fa22a;
+  }
+  
+  .decrement-btn,.increment-btn:active {
+    background-color: #5a8a1d;
+  }
+  
+  

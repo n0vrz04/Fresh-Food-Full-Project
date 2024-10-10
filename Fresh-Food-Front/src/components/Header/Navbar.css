@@ -1,0 +1,206 @@
+/* General styling for all screen sizes */
+body {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.navbar {
+  background-color: white;
+}
+
+/* Top contact and account section styling */
+.navbar-contact {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-contact a {
+  text-decoration: none;
+  color: #555;
+}
+
+.phone-number {
+  color: #77aa46;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.navbar-account a:hover {
+  color: #77aa46;
+}
+
+.navbar-bottom {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.navbar-search,
+.navbar-cart a {
+  color: #77aa46;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar-search:hover,
+.navbar-cart:hover a {
+  color: #4f851d;
+}
+
+.cart-badge {
+  background-color: #77aa46;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+/* Logo section */
+.navbar-logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* Menu links styling */
+.navbar-menu {
+  width: 90%;
+  padding: 5px 90px;
+  background-color: white;
+}
+
+.navbar-links {
+  
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.navbar-link:hover {
+  color: #77aa46;
+}
+
+.hamburger-menu {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .navbar-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-icons {
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  .navbar-logo {
+    width: 120px;
+  }
+
+  .navbar-link {
+    font-size: 0.7rem;
+  }
+
+  .navbar-menu {
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 576px) {
+  .navbar{
+  }
+
+  .navbar-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+    border: none;
+  }
+
+  .navbar-menu{
+    width: 50%;
+  }
+
+  .navbar-contact {
+    font-size: 12px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-icons {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .navbar-logo {
+    width: 100px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 0.9rem;
+  }
+
+  .hamburger-menu:hover {
+    color: #77aa46;
+  }
+
+  .navbar-links {
+    display: none; /* Hide the navbar links by default on mobile */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar-links.open {
+    display: flex; /* Show the navbar links when menuOpen is true */
+  }
+
+  .navbar-link {
+    font-size: 14px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .navbar-link:hover {
+    background-color: #77aa46;
+    color: #fff;
+  }
+}

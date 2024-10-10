@@ -1,0 +1,39 @@
+.map-with-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -10px; /* To overlap with the map slightly */
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-item i {
+    font-size: 20px;
+    color: green;
+  }
+  
+  .contact-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+
+  
+  

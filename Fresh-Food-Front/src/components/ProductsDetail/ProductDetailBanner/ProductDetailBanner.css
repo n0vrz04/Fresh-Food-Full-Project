@@ -1,0 +1,42 @@
+.details-banner {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    height: 200px;
+    background-image: url('../../../assets/pictures/products/product-details.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .banner-content h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .banner-content p {
+    margin: 10px 0 0;
+    font-size: 1em;
+  }
+  
+  .banner-content p span {
+    color: #8ab34c; 
+  }
+  .home-link{
+    color: #fff;
+    text-decoration: none;
+  }
+  .home-link:hover{
+    color: #8ab34c;
+  }
+  
+  

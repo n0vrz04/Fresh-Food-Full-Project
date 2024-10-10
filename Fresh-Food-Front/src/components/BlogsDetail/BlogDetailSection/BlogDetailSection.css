@@ -1,0 +1,39 @@
+
+.blog-detail{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.blog-name-detail {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #8bc34a;
+  }
+  
+  .blog-author-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .blog-author {
+    color: grey;
+    font-size: 1.2rem;
+  }
+  
+  .blog-date {
+    color: #8bc34a;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .blog-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  

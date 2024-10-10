@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+.decorative-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .decorative-divider .line {
+    width: 100px;
+    border: none;
+    border-top: 2px solid #8ab34c;
+    margin: 0 10px;
+  }
+
+  .fresh-food-section {
+    padding: 20px 0;
+    font-family: "Alegreya SC", serif;
+  font-weight: 500;
+  font-style: normal;
+  }
+  
+  .farmer-img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .section-divider {
+    margin: 10px 0;
+    border: 0;
+    border-top: 2px solid #ddd;
+    width: 50px;
+  }
+  
+  .feature-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card img {
+    width: 32px;
+  }
+
+  .feature-card h5 {
+    font-size: 12px;
+  }
+
+  .feature-card p {
+    font-size: 10px;
+  }
+  
+  .text-success {
+    color: #28a745 !important;
+  }
+
+  .right-header{
+    font-size: 32px;
+    font-weight: 300;
+    color: black;
+  }
+
+  .right-text{
+    font-size: 14px;
+  }
+
+
+  

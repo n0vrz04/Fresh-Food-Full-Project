@@ -1,0 +1,49 @@
+ .our-suppliers-section {
+    background: url('../../../assets/pictures/home/7.jpg') no-repeat center center/cover;
+    position: relative;
+    padding:  0;
+    color: #fff;
+  }
+  
+  .section-divider {
+    margin: 0 auto 20px;
+    border: 0;
+    border-top: 2px solid #8bc34a; 
+    width: 60px;
+  }
+  
+  .supplier-logo {
+    margin: 0 15px;
+    max-height: 80px; 
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    max-width: 100px; 
+  }
+  
+  .supplier-logo:hover {
+    opacity: 1;
+  }
+  
+  h2 {
+    color: #fff; 
+    font-weight: bold;
+  }
+  
+  /* .supplier-carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px; 
+  } */
+  
+  /* .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(1); 
+  } 
+  

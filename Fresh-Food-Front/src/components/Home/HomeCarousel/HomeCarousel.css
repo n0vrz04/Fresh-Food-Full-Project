@@ -1,0 +1,116 @@
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', cursive;
+    padding: 0 10px;
+  }
+  
+  .carousel-caption .carousel-header {
+    font-size: 4rem;
+    color: #EA8800;
+  }
+
+  .carousel-caption .carousel-header2 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .carousel-caption .carousel-text {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption .carousel-text2 {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .carousel-caption .carousel-button {
+    font-size: 0.8rem;
+    padding: 8px 20px;
+    border-radius: none;
+    text-decoration: none;
+    color: #80B435;
+    border: 1px solid #80B435;
+  }
+
+  .carousel-caption .carousel-button2 {
+    font-size: 0.8rem;
+    padding: 8px 20px;
+    border-radius: none;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .carousel-caption .carousel-button:hover {
+    background-color: #80B435;
+    color: #fff;
+  }
+
+  .carousel-caption .carousel-button2:hover {
+    background-color: #80B435;
+    border: 1px solid #80B435;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: auto;
+    max-height: 600px;
+    width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    .carousel-caption .carousel-header {
+        font-size: 3rem;
+    }
+    .carousel-caption .carousel-header2 {
+        font-size: 2.5rem;
+    }
+    .carousel-caption .carousel-text, 
+    .carousel-caption .carousel-text2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption .carousel-header {
+        font-size: 2.5rem;
+    }
+    .carousel-caption .carousel-header2 {
+        font-size: 2rem;
+    }
+    .carousel-caption .carousel-text, 
+    .carousel-caption .carousel-text2 {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption .carousel-button, 
+    .carousel-caption .carousel-button2 {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption .carousel-header {
+        font-size: 2rem;
+    }
+    .carousel-caption .carousel-header2 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption .carousel-text, 
+    .carousel-caption .carousel-text2 {
+        display: none;
+    }
+
+    .carousel-caption .carousel-button, 
+    .carousel-caption .carousel-button2 {
+        display: none;
+    }
+}
+
+
+  
