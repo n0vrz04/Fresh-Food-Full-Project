@@ -1,4 +1,3 @@
-// WhyChooseUs.js
 import React from 'react';
 import './WhyChooseUs.css'; 
 import leafIcon from '../../../assets/pictures/about/leaf_icon.png';

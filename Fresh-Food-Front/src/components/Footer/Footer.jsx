@@ -1,9 +1,8 @@
-// src/Footer.js
 import React from 'react';
-import './Footer.css'; // Import the CSS file for styling
+import './Footer.css'; 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebook, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons'; // Brand icons
+import { faTwitter, faFacebook, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons'; 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {

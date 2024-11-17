@@ -27,7 +27,7 @@ const ProductDetailSection = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    axios.get('http://localhost:3090/products/getall')
+    axios.get('https://vercel-back-project-fresh-food.vercel.app/products/getall')
       .then((response) => {
         if (response.data && Array.isArray(response.data)) {
           const productsWithImages = response.data.map((product) => {

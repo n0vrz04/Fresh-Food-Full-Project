@@ -13,8 +13,15 @@ const ProductGrid = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
+  const token = localStorage.getItem('token')
   useEffect(() => {
-    axios.get('http://localhost:3090/products/getall')
+    axios.get('https://vercel-back-project-fresh-food.vercel.app/products/getall',
+      {
+        headers:{
+          Authorization:`Bearer ${token}`
+        }
+      }
+    )
       .then((response) => {
         
         if (response.data && Array.isArray(response.data)) {

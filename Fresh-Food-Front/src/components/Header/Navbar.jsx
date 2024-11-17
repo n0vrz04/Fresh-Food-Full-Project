@@ -13,12 +13,10 @@ const Navbar = () => {
   const [username, setUsername] = useState('');
   const navigate = useNavigate();
 
-  // Toggle the mobile menu
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Check if user is authenticated on component mount
   useEffect(() => {
     const token = localStorage.getItem('token');
     const storedUsername = localStorage.getItem('username');
@@ -28,7 +26,6 @@ const Navbar = () => {
     }
   }, []);
 
-  // Handle user logout
   const handleLogout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('username');
@@ -36,7 +33,6 @@ const Navbar = () => {
     navigate('/login');
   };
 
-  // Listen to localStorage changes (in case of external changes to auth)
   useEffect(() => {
     const onStorageChange = () => {
       const token = localStorage.getItem('token');

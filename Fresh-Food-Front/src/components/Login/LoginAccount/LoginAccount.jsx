@@ -13,13 +13,11 @@ const LoginAccount = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Check if user was redirected from a protected route
     if (location.state && location.state.fromProtectedRoute) {
       setRedirectedFromProtected(true);
     }
   }, [location]);
 
-  // Handler for input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -28,21 +26,18 @@ const LoginAccount = () => {
     });
   };
 
-  // Handler for form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3090/login', formData);
+      const response = await axios.post('https://vercel-back-project-fresh-food.vercel.app/login', formData);
 
       if (response.data && response.data.success) {
-        // Store both token and username
         localStorage.setItem('token', response.data.data.token);
         localStorage.setItem('username', formData.username);
         
         setSuccess('Login successful!');
         setError('');
 
-        // Redirect to home
         navigate('/');
       } else {
         setError(response.data.message || 'Incorrect username or password.');

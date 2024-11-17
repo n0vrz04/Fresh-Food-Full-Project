@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './404.css'; // Optional: add custom CSS for styling the 404 page
+import './404.css'; 
 import Navbar from '../Header/Navbar';
 import Footer from '../Footer/Footer';
 import Icon404 from '../../assets/pictures/pic404.jpg';

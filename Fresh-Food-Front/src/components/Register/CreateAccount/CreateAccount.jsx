@@ -27,17 +27,16 @@ const CreateAccount = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3090/register', formData);
+      const response = await axios.post('https://vercel-back-project-fresh-food.vercel.app/register', formData);
       
-      // Handle success response
       if (response.data && response.data.success) {
         setSuccess('Account created successfully!');
-        setError(''); // Clear error if there was one
+        setError(''); 
         navigate('/login');
       }
     } catch (err) {
       setError(err.response?.data?.message || 'Something went wrong!');
-      setSuccess(''); // Clear success message if there was an error
+      setSuccess(''); 
       console.error(err);
     }
   };

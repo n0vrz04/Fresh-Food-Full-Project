@@ -1,4 +1,3 @@
-// WhyChooseUs.js
 import React from 'react';
 import './WhyChooseUs.css'; 
 import bigBasket from '../../../assets/pictures/bigBasket.jpg';

@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './BackToTop.css'; // Import CSS for styling
-
+import './BackToTop.css'; 
 const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when page is scrolled down by 300px
   const toggleVisibility = () => {
     if (window.scrollY > 300) {
       setIsVisible(true);
@@ -13,7 +11,6 @@ const BackToTop = () => {
     }
   };
 
-  // Scroll the window to the top
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
